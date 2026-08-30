@@ -205,18 +205,10 @@ The results demonstrate that gated recurrent architectures such as LSTM and GRU 
 
 ## Performance Visualization
 
-### Model Comparison
+### Training vs Validation Accuracy and Loss - GRU
 
-![Model Comparison](images/model_comparison.png)
-
-### Training vs Validation Accuracy
-
-![Accuracy Plot](images/accuracy_plot.png)
-
-### Training vs Validation Loss
-
-![Loss Plot](images/loss_plot.png)
-
+![Accuracy Plot](images/gru_loss_accuracy.png)
+ 
 ---
 
 # Confusion Matrix Results
@@ -289,9 +281,10 @@ Confidence Score
 
 ### Web Application Screenshot
 
-![Web Application](images/web_app.png)
+![Web Application](images/webapp_negative.png)
 
----
+![Web Application](images/webapp_negative.png)
+
 
 # Project Structure
 
