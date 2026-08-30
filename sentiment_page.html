@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sentiment Analyzer</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Sentiment Analyzer</h1>
+
+        <p class="subtitle">
+            Analyze the sentiment of your product review using a GRU-based Deep Learning model.
+        </p>
+
+        <form action="/predict" method="POST">
+
+            <label for="review">Enter your review</label>
+
+            <textarea 
+                id="review"
+                name="review"
+                placeholder="Type or paste your review here..."
+                required
+            >{{ review if review else '' }}</textarea>
+
+            <button type="submit">
+                Analyze Sentiment
+            </button>
+
+        </form>
+
+        {% if sentiment %}
+
+        <div class="result">
+
+            <h2>Analysis Result</h2>
+
+            <p>
+                <strong>Sentiment:</strong>
+                {{ sentiment }}
+            </p>
+
+            <p>
+                <strong>Confidence:</strong>
+                {{ confidence }}%
+            </p>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
