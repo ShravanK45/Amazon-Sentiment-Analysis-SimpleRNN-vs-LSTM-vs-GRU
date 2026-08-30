@@ -283,7 +283,7 @@ Confidence Score
 
 ![Web Application](images/webapp_negative.png)
 
-![Web Application](images/webapp_negative.png)
+![Web Application](images/Webapp_positive.png)
 
 
 # Project Structure
